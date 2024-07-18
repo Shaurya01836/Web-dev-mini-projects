@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Section</title>
+    <!-- Material-UI CDN -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <script src="https://unpkg.com/@material-ui/core@latest/umd/material-ui.development.js"></script>
+    <style>
+        :root {
+            --primary-color: #6200ea;
+            --secondary-color: #da5203;
+            --background-color: whitesmoke;
+            --text-color: #212121;
+            --nav-background-color: #3700b3;
+            --button-background-color: var(--primary-color);
+            --button-text-color: #ffffff;
+            --link-color: var(--primary-color);
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        #faq {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .faq {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            gap: 10px;
+        }
+
+        .ques {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .ques:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .answer {
+            display: none;
+            padding-top: 5px;
+        }
+
+        .on {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="faq">
+        <h3>Frequently Asked Questions</h3>
+        <div class="faq">
+            <div class="ques">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, perferendis.</p>
+            </div>
+            <div class="ques">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, perferendis.</p>
+            </div>
+            <div class="ques">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, perferendis.</p>
+            </div>
+            <div class="ques">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, perferendis.</p>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        document.querySelectorAll('.ques').forEach(ques => {
+            ques.addEventListener('click', () => {
+                const answer = ques.querySelector('.answer');
+                if (answer.classList.contains('on')) {
+                    answer.classList.remove('on');
+                } else {
+                    document.querySelectorAll('.answer').forEach(ans => ans.classList.remove('on'));
+                    answer.classList.add('on');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

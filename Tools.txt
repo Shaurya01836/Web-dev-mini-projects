@@ -1,0 +1,7 @@
+BMI calculator 
+Quiz Game
+Weather app
+Typing speed test
+Url shortener
+Qr code maker
+Random Password generator and password strength meter

@@ -1,0 +1,24 @@
+#121222 - Dark Blue
+#DFE2E9 - Light Grey
+#7A4630 - Dark Brown
+#C8CED9 - Light Greyish Blue
+#666D73 - Grey
+#5D38C0 - Purple
+#3A3E50 - Dark Grey
+#97A1B0 - Light Blue Grey
+#CE924F - Orange Brown
+#211E32 - Very Dark Blue
+
+Hero section -
+Create amazing web projects with the power of coding
+Showcase your web development skills with a variety of mini projects and tools. From calculators to games, explore and get inspired!
+[Start Exploring for Free] [Create an Account]
+
+About section -
+A Fully Integrated Suite of Web Development Projects
+Our platform offers a collection of web development mini projects designed to enhance your coding skills and creativity. Whether you’re a beginner or an experienced developer, you'll find something to challenge and inspire you.
+
+Call to action - 
+Ready to start building?
+Join our community of web developers and start creating amazing projects today. Sign up for free and unlock your potential!
+[Create an Account]
