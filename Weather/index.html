@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Watch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <div class="weather">
+      <h2>Weather Watch</h2>
+    </div>
+    <input type="text" id="cityInput" placeholder="Enter City Name">
+    <br>
+    <button id="getWeatherBtn">Get Weather</button>
+    <div id="weatherInfo" style="display: none;">
+      <h3 id="cityName"></h3>
+      <p id="temperature"></p>
+      <p id="weather"></p>
+      <p id="humidity"></p>
+      <p id="windSpeed"></p>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
