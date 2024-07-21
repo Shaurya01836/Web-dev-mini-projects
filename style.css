@@ -36,7 +36,7 @@ main {
 }
 
 
- /* nav bar   */
+/* nav bar   */
 nav {
     display: flex;
     align-items: center;
@@ -59,12 +59,12 @@ nav {
     width: 40%;
 }
 
+
 a {
     text-decoration: none;
     font-weight: 400;
     color: #ffffffd7;
 }
-
 
 #right button {
     padding: 8px 15px;
@@ -82,7 +82,6 @@ a {
 button a {
     color: var(--button-text-color);
 }
-
 
 
 /* hero section */
@@ -112,14 +111,17 @@ header {
     transition: color 0.3s;
     /* color: var(--primary-color); */
 }
-#left-h h1:hover{
+
+#left-h h1:hover {
     color: var(--primary-color);
 }
+
 #left-h p {
     font-size: 18px;
     width: 85%;
     line-height: 1.6;
 }
+
 .hero-buttons {
     display: flex;
     gap: 20px;
@@ -144,17 +146,19 @@ header {
     border: 1px solid var(--link-color);
 }
 
-.herostats{
+.herostats {
     display: flex;
     align-items: center;
     gap: 20px;
     padding: 30px 0px;
 }
-.herostats h5{
-   font-size: 20px;
-   font-weight: 500;
+
+.herostats h5 {
+    font-size: 20px;
+    font-weight: 500;
 
 }
+
 #right-h {
     width: 40%;
     display: flex;
@@ -171,6 +175,79 @@ header {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+
+/* projects section */
+.project {
+    width: 100%;
+    height: 80%;
+    padding: 40px 30px;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-p {
+    width: 50%;
+}
+
+.left-p img {
+    display: flex;
+    align-items: center;
+    height: 400px;
+    width: 95%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.377);
+}
+
+.right-p {
+    width: 50%;
+    padding: 10px 0px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.right-p h1 {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 1.2;
+    width: 80%;
+}
+
+.right-p p {
+    font-size: 18px;
+    width: 80%;
+    line-height: 1.6;
+}
+
+.p-button {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+    gap: 30px;
+}
+
+.p-button button {
+    padding: 10px 20px;
+    width: 140px;
+    border: none;
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.p-button button:hover {
+    background-color: var(--secondary-color);
+}
 
 /* Featured Projects section */
 #tools {
@@ -191,7 +268,7 @@ header {
     flex-wrap: wrap;
     gap: 30px;
     align-items: center;
-   justify-content: space-around;
+    justify-content: space-around;
 }
 
 .cards {
@@ -218,79 +295,97 @@ header {
     object-fit: cover;
 }
 
-.cards h4, .cards p{
+.cards h4,
+.cards p {
     width: 100%;
 
 }
+
 .cards button {
-   width: 75%;
-    padding: 8px ;
+    width: 75%;
+    padding: 8px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
-   background-color: var(--button-background-color);
-   color: var(--button-text-color);
-   transition: background-color 0.3s; 
-}
-.cards button:hover{
-    background-color: var(--secondary-color);
-}
-
-
-/* projects section */
-.project {
-    width: 100%;
-    padding: 40px 30px;
-    background-color: var(--background-color);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#left-p {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-#left-p h1 {
-    font-size: 36px;
-    color: var(--primary-color);
-}
-
-#left-p p {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-#left-p button {
-    padding: 8px 15px;
-    border-radius: 5px;
-    border: none;
-    width: 30%;
     background-color: var(--button-background-color);
     color: var(--button-text-color);
-    cursor: pointer;
     transition: background-color 0.3s;
 }
 
-#left-p button:hover {
+.cards button:hover {
     background-color: var(--secondary-color);
 }
 
-#right-p {
-    width: 50%;
+
+/* for more connect  */
+
+.container {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 80%;
+    width: 100%;
+    padding: 30px;
 }
 
-#right-p img {
-    height: 300px;
-    width: 450px;
-    border-radius: 15px;
+.image-section {
+    width: 45%;
+    height: 70%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-section img {
+    width: 95%;
+    height: 400px;
+    border-radius: 10px;
     object-fit: cover;
 }
+
+.text-section {
+    width: 50%;
+    padding: 20px 30px;
+    color: var(--text-color);
+    border-radius: 8px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.subtitle {
+    color: var(--primary-color);
+
+}
+
+.title {
+    font-size: 36px;
+}
+
+.description {
+    font-size: 18px;
+    width: 90%;
+    line-height: 1.6;
+
+}
+
+.button {
+    display: inline-block;
+    width: 40%;
+    padding: 10px 20px;
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid var(--button-background-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--button-text-color);
+    color: var(--button-background-color);
+}
+
 
 /* faq section */
 #faq {
@@ -302,15 +397,17 @@ header {
     padding: 30px;
 }
 
-#faq h4:hover{
+#faq h4:hover {
     color: var(--primary-color);
 }
+
 #left-f {
     width: 20%;
     height: 100%;
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
+
 #right-f {
     display: flex;
     flex-direction: column;
@@ -321,6 +418,7 @@ header {
     padding: 10px;
     padding-right: 40px;
 }
+
 .ques {
     display: flex;
     align-items: center;
@@ -331,10 +429,12 @@ header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.192);
     cursor: pointer;
 }
+
 .ques i {
     font-size: 1.5em;
     transition: transform 0.3s;
 }
+
 .ans {
     width: 730px;
     padding: 20px 0;
@@ -392,4 +492,3 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
-

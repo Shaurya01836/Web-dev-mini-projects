@@ -40,10 +40,10 @@ document.querySelector(".tools").innerHTML = clutter;
 // for faq section
 
 let faq = [
-    { ques: "Lorem ipsum dolor sit amet?", ans: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur sed aut expedita tempora quae beatae, rem, libero magnam id illo quos nesciunt soluta ex porro voluptatibus voluptatem voluptate. Amet." },
-    { ques: "Lorem ipsum dolor sit amet?", ans: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem voluptatum veniam esse." },
-    { ques: "Lorem ipsum dolor sit amet?", ans: "Lorem ipsum dolor sit, amet consectetur adipisicing elit." },
-    { ques: "Lorem ipsum dolor sit amet?", ans: "Lorem ipsum dolor sit, amet consectetur adipisicing elit." }
+    { ques: "What is the main focus of this website?", ans: "This website showcases a collection of mini web development projects, providing examples and resources for learning and improving web development skills." },
+    { ques: "Can I use the code from these projects for my own work?", ans: "Yes, you can use the code from these projects for educational purposes and personal projects. Please make sure to credit the original source." },
+    { ques: "How can I contribute to this repository?", ans: "Contributions are welcome! Fork the repository, create a feature branch, commit your changes, and submit a pull request. Please ensure your contributions align with the project's goals and standards." },
+    { ques: "How can I contact you for collaboration or questions?", ans: "For any inquiries or collaboration requests, you can contact me via the email provided on the contact page or through my GitHub profile: Shaurya01836." }
 ]
 
 var faqz = "";
