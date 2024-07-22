@@ -160,16 +160,17 @@ header {
 }
 
 #right-h {
-    width: 40%;
+    width: 45%;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 #right-h img {
-    height: 400px;
-    width: 350px;
+    height: 200px;
+    width: 250px;
     border-radius: 5px;
     object-fit: cover;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -189,6 +190,7 @@ header {
 
 .left-p {
     width: 50%;
+    transition: transform 0.5s, opacity 0.5s;
 }
 
 .left-p img {
@@ -203,7 +205,7 @@ header {
 
 .right-p {
     width: 50%;
-    padding: 10px 0px;
+    padding: 20px 0px;
     padding-left: 30px;
     display: flex;
     flex-direction: column;
@@ -211,6 +213,7 @@ header {
     height: 100%;
     background-color: whitesmoke;
     border-radius: 10px;
+    transition: transform 0.5s, opacity 0.5s;
 }
 
 .right-p h1 {
@@ -248,6 +251,17 @@ header {
 .p-button button:hover {
     background-color: var(--secondary-color);
 }
+
+.fade-out {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.fade-in {
+    opacity: 1;
+    transform: scale(1);
+}
+
 
 /* Featured Projects section */
 #tools {
@@ -325,20 +339,22 @@ header {
     justify-content: space-between;
     height: 80%;
     width: 100%;
-    padding: 30px;
+    padding: 40px 30px;
 }
 
 .image-section {
     width: 45%;
-    height: 70%;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+     
 }
 
 .image-section img {
     width: 95%;
-    height: 400px;
+    height: 380px;
     border-radius: 10px;
     object-fit: cover;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .text-section {
@@ -382,7 +398,7 @@ header {
 }
 
 .button:hover {
-    background-color: var(--button-text-color);
+    background-color: whitesmoke;
     color: var(--button-background-color);
 }
 
@@ -428,6 +444,7 @@ header {
     padding: 20px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.192);
     cursor: pointer;
+    font-size: 18px;
 }
 
 .ques i {

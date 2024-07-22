@@ -27,47 +27,28 @@
 
         <!-- hero section -->
         <header>
-            <div id="left-h">
-                <h1>A Fully Integrated Site of Web Development Projects</h1>
-                <p>Our platform offers a collection of web development mini projects designed to enhance your coding
-                    skills and creativity. Whether you are a beginner or an experienced developer, you'll find something
-                    to challenge and inspire you.</p>
-                <div class="hero-buttons">
-                    <a href="#" class="btn-primary">Documentation</a>
-                    <a target="_blank" href="https://github.com/Shaurya01836/Web-dev-mini-projects"
-                        class="btn-secondary">View on GitHub</a>
-                </div>
-                <div class="herostats">
-                    <h5>4 Projects --</h5>
-                    <h5>0 Contributor --</h5>
-                    <h5>0 Forks</h5>
-                </div>
-            </div>
-            <div id="right-h">
-                <img src="" alt="">
-                <!-- <img src="Generator AI website saas UI.jpeg" alt=""> -->
-            </div>
+            <!-- dynamically show by js -->
         </header>
 
         <!-- projects section -->
         <section class="project">
             <div class="left-p">
-                <img src="Screenshot (659).png" alt="">
+                <img src="https://plus.unsplash.com/premium_vector-1713941732638-bbb0e543d7d4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHR5cGluZyUyMHRlc3QlMjB3ZWJzaXRlfGVufDB8fDB8fHww"
+                    alt="" id="project-img">
             </div>
             <div class="right-p">
                 <h1>4+ Web Development Mini Projects</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem hic quae ab molestias minima,
+                <p id="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem hic quae ab
+                    molestias minima,
                     tempore doloremque earum architecto qui labore!</p>
                 <div class="p-button">
-                    <button>BMI Calculator</button>
-                    <button>Quiz Game</button>
-                    <button>Weather</button>
-                    <button>Typing Test</button>
-                    <button>Typing Test</button>
+                    <button onclick="changeContent(0)">BMI Calculator</button>
+                    <button onclick="changeContent(1)">Quiz Game</button>
+                    <button onclick="changeContent(2)">Weather</button>
+                    <button onclick="changeContent(3)">Typing Test</button>
                     <button><a href="#tools">Much More > </a></button>
                 </div>
             </div>
-
         </section>
 
 
@@ -82,7 +63,8 @@
         <!-- for more connect  -->
         <div class="container">
             <div class="image-section">
-                <img src="" alt="Support Team">
+                <img src="https://plus.unsplash.com/premium_vector-1682310703468-80b49ebd750e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Q29udHJpYnV0ZSUyMG9uJTIwcHJvamVjdHxlbnwwfHwwfHx8MA%3D%3D"
+                    alt="Support Team">
             </div>
             <div class="text-section">
                 <h2 class="subtitle">Contribute and Collaborate</h2>
@@ -94,7 +76,8 @@
                     and contribute your own unique projects to our GitHub repository. Your contributions will help
                     create a valuable resource for beginners in the web development community.
                 </p>
-                <a target="_blank" href="https://github.com/Shaurya01836/Web-dev-mini-projects" class="button">Visit our Github Repositry</a>
+                <a target="_blank" href="https://github.com/Shaurya01836/Web-dev-mini-projects" class="button">Visit our
+                    Github Repositry</a>
             </div>
         </div>
 
@@ -126,7 +109,9 @@
             </div>
         </footer>
     </main>
+    <script src="dynamic_content_load.js"></script>
     <script src="script.js"></script>
+
 </body>
 
 </html>
