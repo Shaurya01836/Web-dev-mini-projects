@@ -1,3 +1,21 @@
+// for toggle dark mode 
+document.addEventListener('DOMContentLoaded', function () {
+    const modeToggle = document.getElementById('mode-toggle');
+    let isDarkMode = false;
+
+    modeToggle.addEventListener('click', function () {
+        if (isDarkMode) {
+            modeToggle.classList.replace('ri-moon-fill', 'ri-sun-fill');
+            document.body.classList.remove('dark-mode');
+        } else {
+            modeToggle.classList.replace('ri-sun-fill', 'ri-moon-fill');
+            document.body.classList.add('dark-mode');
+        }
+        isDarkMode = !isDarkMode;
+    });
+});
+
+
 // for faq section
 
 document.querySelectorAll('.ques').forEach(item => {
@@ -65,7 +83,14 @@ function changeContent(index) {
     setTimeout(() => {
         leftP.classList.remove('fade-in');
         rightP.classList.remove('fade-in');
-    }, 1000);
+    }, 500);
 }
 
 
+// var main = document.querySelector("main")
+// var crsr = document.querySelector(".cursor")
+
+// main.addEventListener("mousemove" , function(dets){
+// crsr.style.left = dets.x + "px"
+// crsr.style.top = dets.y + "px"
+// })
