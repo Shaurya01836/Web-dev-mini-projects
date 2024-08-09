@@ -5,3 +5,22 @@ Typing speed test
 Url shortener
 Qr code maker
 Random Password generator and password strength meter
+
+var main = document.getElementById("main")
+var crsr = document.querySelector(".cursor")
+
+main.addEventListener("mousemove" , function(dets){
+crsr.style.left = dets.x + "px"
+crsr.style.top = dets.y + "px"
+})
+
+.cursor {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    position: absolute;
+}
+
+  <div class="cursor"></div>

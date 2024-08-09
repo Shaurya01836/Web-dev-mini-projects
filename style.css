@@ -307,7 +307,7 @@ header {
     height: 350px;
     gap: 10px;
     border-radius: 10px;
-    background-color: var(--background-color);
+    background-color: whitesmoke;
     align-items: center;
     text-align: center;
     overflow: hidden;

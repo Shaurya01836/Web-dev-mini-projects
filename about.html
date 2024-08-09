@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+    <main>
+        <!-- nav bar  -->
+        <nav>
+            <div id="left">
+                <h3>Web-Dev-mini-Projects</h3>
+            </div>
+            <div id="right">
+                <h3><a href="index.html"><i class="ri-home-2-line"></i>Home</a></h3>
+                <h3><a href="#tools"><i class="ri-code-s-slash-line"></i>Projects</a></h3>
+                <h3><a href="about.html"><i class="ri-team-line"></i>About us</a></h3>
+                <button><a href="">Contact us</a></button>
+                <i id="mode-toggle" class="ri-sun-fill"></i>
+            </div>
+        </nav>
+
+        <header>
+            <div id="left">
+                <h1>Who We Are</h1>
+                <p>Welcome to Web Dev Mini Projects! We're a passionate team of developers, designers, and
+                    problem-solvers dedicated to creating bite-sized web development projects that are both fun and
+                    educational. Our goal is to help you sharpen your coding skills, explore new technologies, and build
+                    a solid portfolio, one project at a time.</p>
+            </div>
+            <div id="right">
+                <img src="Resources/about.png" alt="">
+            </div>
+        </header>
+        <section class="info">
+            <div class="container">
+                <!-- Left Section: Mission Statement -->
+                <div class="mission">
+                    <h1>Our mission</h1>
+                    <p>Our mission is simple: to empower aspiring developers and seasoned professionals alike by
+                        providing high-quality, hands-on projects that inspire creativity and innovation. Whether you're
+                        just starting your coding journey or looking to expand your skill set, our mini projects are
+                        designed to challenge you and help you grow.</p>
+                    <p>At Web Dev Mini Projects, we focus on creating a wide range of web development projects that
+                        cover various aspects of front-end and back-end development. From simple landing pages to
+                        complex web applications, each project is carefully crafted to teach you valuable coding
+                        concepts and best practices.</p>
+                    <p>We're always on the lookout for enthusiastic developers who want to contribute to our growing
+                        library of mini projects. If you're interested in collaborating or have an idea for a project,
+                        we'd love to hear from you!</p>
+                </div>
+
+                <!-- Right Section: Statistics -->
+                <div class="statistics">
+                    <div class="stat">
+                        <h2>44 million</h2>
+                        <p>Transactions every 24 hours</p>
+                    </div>
+                    <div class="stat">
+                        <h2>$119 trillion</h2>
+                        <p>Assets under holding</p>
+                    </div>
+                    <div class="stat">
+                        <h2>46,000</h2>
+                        <p>New users annually</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <img src="Resources/web2.png" alt="">
+            </div>
+        </section>
+
+        <div class="team-section">
+            <!-- Header Section -->
+            <div class="team-header">
+                <h1>Our team</h1>
+                <p>Sit facilis neque ab nulla vel. Cum eos in laudantium. Temporibus eos totam in dolorum. Nemo vel
+                    facere repellendus ut eos dolores similique.</p>
+            </div>
+
+            <!-- Team Members Grid -->
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="images/michael_foster.jpg" alt="Shaurya Upadhyay">
+                    <h3>Shaurya Upadhyay</h3>
+                    <p>Founder</p>
+                </div>
+            </div>
+
+            <!-- Footer Section -->
+            <footer>
+                <div class="footer-container">
+                    <h3>Web-Dev-mini-Projects</h3>
+                    <p>&copy; 2024 Web-Dev. All rights reserved.</p>
+                </div>
+            </footer>
+    </main>
+    <script>
+        // script.js
+        document.addEventListener("DOMContentLoaded", function () {
+            const stats = document.querySelectorAll(".stat h2");
+            stats.forEach(stat => {
+                const animate = () => {
+                    const value = +stat.getAttribute('data-target');
+                    const data = +stat.innerText;
+                    const speed = 200;
+                    const time = value / speed;
+                    if (data < value) {
+                        stat.innerText = Math.ceil(data + time);
+                        setTimeout(animate, 1);
+                    } else {
+                        stat.innerText = value;
+                    }
+                };
+                animate();
+            });
+        });
+
+    </script>
+</body>
+
+</html>

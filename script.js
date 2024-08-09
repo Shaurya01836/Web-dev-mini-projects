@@ -40,22 +40,22 @@ document.querySelectorAll('.ques').forEach(item => {
 const projects = [
     {
         name: 'BMI Calculator',
-        img: 'https://via.placeholder.com/400x300?text=BMI+Calculator',
+        img: 'Resources/BMI.png',
         desc: 'This project calculates Body Mass Index based on user input.'
     },
     {
         name: 'Quiz Game',
-        img: 'https://via.placeholder.com/400x300?text=Quiz+Game',
+        img: 'Resources/quiz.png',
         desc: 'A simple quiz game to test your knowledge on various topics.'
     },
     {
         name: 'Weather',
-        img: 'https://via.placeholder.com/400x300?text=Weather',
+        img: 'Resources/weather.png',
         desc: 'A weather application that shows current weather conditions.'
     },
     {
         name: 'Typing Test',
-        img: 'https://via.placeholder.com/400x300?text=Typing+Test',
+        img: 'Resources/typing test.png',
         desc: 'A typing test to measure your typing speed and accuracy.'
     }
 ];
@@ -83,7 +83,7 @@ function changeContent(index) {
     setTimeout(() => {
         leftP.classList.remove('fade-in');
         rightP.classList.remove('fade-in');
-    }, 500);
+    }, 1000);
 }
 
 

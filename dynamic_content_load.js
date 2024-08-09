@@ -54,10 +54,10 @@ document.querySelector(".tech").innerHTML = techz;
 
 //for Featured Projects (cards)
 let arr = [
-    { name: "BMI Calculator", des: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, corporis?", img: "Screenshot (657).png", link: "BMI Calculator/index.html" },
-    { name: "Quiz Game", des: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, corporis?", img: "Screenshot (659).png", link: "Quiz Game/index.html" },
-    { name: "Weather", des: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, corporis?", img: "Screenshot (664).png", link: "Weather/index.html" },
-    { name: "Typing Test", des: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, corporis?", img: "", link: "" }
+    { name: "BMI Calculator", des: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, corporis?", img: "Resources/BMI.png", link: "BMI Calculator/index.html" },
+    { name: "Quiz Game", des: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, corporis?", img: "Resources/quiz.png", link: "Quiz Game/index.html" },
+    { name: "Weather", des: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, corporis?", img: "Resources/weather.png", link: "Weather/index.html" },
+    { name: "Typing Test", des: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, corporis?", img: "Resources/typing test.png", link: "" }
 ]
 
 var clutter = "";
