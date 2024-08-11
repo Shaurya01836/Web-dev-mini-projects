@@ -12,6 +12,7 @@
     --primary-color: #6200ea;
     --secondary-color: #da5203;
     --background-color: white;
+    --sbackground-colors: whitesmoke;
     --text-color: #212121;
     --nav-background-color: #3700b3;
     --button-background-color: var(--primary-color);
@@ -28,7 +29,8 @@ body.dark-mode {
     --link-color: #bb86fc;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
     font-family: "Rubik", sans-serif;
@@ -81,7 +83,8 @@ a {
     color: #ffffffd7;
 }
 
-#right button,#mode-toggle {
+#right button,
+#mode-toggle {
     padding: 8px 15px;
     border-radius: 5px;
     border: none;
@@ -101,20 +104,28 @@ button a {
 
 /* hero section */
 header {
-    height: 88%;
+    height: 170%;
     width: 100%;
     display: flex;
-    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: 
+        linear-gradient(to bottom, rgba(177, 121, 255, 0.3) 10%, rgba(210, 181, 255, 0.3) 30%, rgba(255, 255, 255, 1) 80%),
+        radial-gradient(circle at top left, rgba(145, 66, 255, 0.3), transparent 70%);
+    background-blend-mode: normal, screen;
     color: var(--text-color);
     padding: 30px;
-    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
 }
 
 #left-h {
     display: flex;
     flex-direction: column;
-    width: 55%;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    gap: 30px;
     padding-top: 20px;
 }
 
@@ -124,7 +135,6 @@ header {
     line-height: 1.2;
     width: 85%;
     transition: color 0.3s;
-    /* color: var(--primary-color); */
 }
 
 #left-h h1:hover {
@@ -133,7 +143,7 @@ header {
 
 #left-h p {
     font-size: 18px;
-    width: 85%;
+    width: 50%;
     line-height: 1.6;
 }
 
@@ -156,7 +166,7 @@ header {
 }
 
 .btn-secondary {
-    background-color: var(--background-color);
+    background-color: var(--sbackground-color);
     color: var(--link-color);
     border: 1px solid var(--link-color);
 }
@@ -175,18 +185,20 @@ header {
 }
 
 #right-h {
-    width: 45%;
+    width: 100%;
+    height: 500px;
+    background-color: var(--sbackground-colors);
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #right-h img {
-    height: 200px;
-    width: 250px;
-    border-radius: 5px;
+    width: 98%;
+    height: 94%;
+    border-radius: 10px;
     object-fit: cover;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -269,13 +281,16 @@ header {
 
 .fade-out {
     opacity: 0;
-    transform: scale(0.95);
+    transform: translateY(10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .fade-in {
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(0);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
+
 
 
 /* Featured Projects section */
@@ -361,7 +376,7 @@ header {
     width: 45%;
     display: flex;
     align-items: center;
-     
+
 }
 
 .image-section img {
@@ -413,7 +428,7 @@ header {
 }
 
 .button:hover {
-    background-color: whitesmoke;
+    background-color: var(--sbackground-colors);
     color: var(--button-background-color);
 }
 
@@ -475,6 +490,65 @@ header {
 }
 
 
+
+/* Contact us starts from here  */
+.contact {
+    width: 100%;
+    height: 80%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .main-c {
+    background-color: whitesmoke;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact .left-c {
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact .left-c h1 {
+    font-size: 36px;
+    color: var(--primary-color);
+}
+
+.contact .left-c p {
+    font-size: 18px;
+    font-weight: 500;
+    width: 90%;
+    line-height: 1.6;
+}
+
+.contact .left-c input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.contact .right-c {
+    width: 40%;
+    height: 90%;
+    border-radius: 10px;
+    background: url(Resources/contactus.png);
+    background-size: cover;
+}
+
 /* Tools & Technologies Used section */
 #tech {
     background-color: var(--background-color);
@@ -508,6 +582,39 @@ header {
     background-color: var(--secondary-color);
 }
 
+/* The Modal (background) */
+.hidden {
+    display: none;
+}
+
+/* Modal styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
 
 
 /* Footer Styles */

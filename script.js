@@ -36,7 +36,6 @@ document.querySelectorAll('.ques').forEach(item => {
 
 
 
-
 const projects = [
     {
         name: 'BMI Calculator',
@@ -66,24 +65,26 @@ function changeContent(index) {
     const projectImg = document.getElementById('project-img');
     const projectDesc = document.getElementById('project-desc');
 
+
     leftP.classList.add('fade-out');
     rightP.classList.add('fade-out');
+
 
     setTimeout(() => {
         projectImg.src = projects[index].img;
         projectDesc.textContent = projects[index].desc;
-
         leftP.classList.remove('fade-out');
         rightP.classList.remove('fade-out');
 
         leftP.classList.add('fade-in');
         rightP.classList.add('fade-in');
-    }, 500);
+    }, 300);
+
 
     setTimeout(() => {
         leftP.classList.remove('fade-in');
         rightP.classList.remove('fade-in');
-    }, 1000);
+    }, 600);
 }
 
 

@@ -80,49 +80,56 @@ button a {
 }
 
 /* Header Styles */
-header {
+
+.container0 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px;
     height: 80%;
-}
-
-header #left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 40%;
-    height: 80%;
-    background-color: whitesmoke;
-    padding: 20px;
-    border-radius: 10px;
-    color: var(--text-color);
-}
-#left h1{
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 1.2;
-    width: 85%;
-}
-#left p{
-    font-size: 18px;
-    width: 85%;
-    line-height: 1.6;
-}
-
-
-header #right {
-    width: 50%;
-}
-
-header img {
     width: 100%;
-    height: 400px;
+    padding: 40px 30px;
+}
+
+.image-section {
+    width: 45%;
+    display: flex;
+    align-items: center;
+
+}
+
+.image-section img {
+    width: 95%;
+    height: 380px;
     border-radius: 10px;
     object-fit: cover;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.text-section {
+    width: 50%;
+    height: 350px;
+    padding: 20px 30px;
+    color: var(--text-color);
+    border-radius: 8px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.title {
+    font-size: 36px;
+    color: var(--primary-color);
+}
+
+.description {
+    font-size: 18px;
+    width: 90%;
+    line-height: 1.6;
+
+}
+
 
 /* Main Content Styles */
 .container {
