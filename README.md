@@ -5,6 +5,13 @@
 
 Welcome to the **Web Development Mini Projects** repository! This collection includes a major website that showcases various mini web projects. Each project demonstrates different aspects and techniques of web development.
 
+![Banner](Resources/Screenshot%20(730).png)
+![Banner](Resources/Screenshot%20(731).png)
+![Banner](Resources/Screenshot%20(732).png)
+![Banner](Resources/Screenshot%20(733).png)
+![Banner](Resources/Screenshot%20(735).png)
+![Banner](Resources/Screenshot%20(734).png)
+
 ## Table of Contents
 
 - [Major Website](#major-website)
