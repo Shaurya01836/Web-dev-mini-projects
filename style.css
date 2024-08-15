@@ -101,6 +101,35 @@ button a {
     color: var(--button-text-color);
 }
 
+/* New styles for responsive design */
+#hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+#mobile-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--nav-background-color);
+    position: absolute;
+    top: 60px;
+    width: 80%;
+    z-index: 1000;
+}
+
+#mobile-menu h3, #mobile-menu button {
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    #right {
+        display: none;
+    }
+    #hamburger {
+        display: block;
+    }
+}
 
 /* hero section */
 header {
