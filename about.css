@@ -26,7 +26,8 @@ body.dark-mode {
     --link-color: #bb86fc;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     font-family: "Rubik", sans-serif;
     background-color: var(--background-color);
@@ -78,6 +79,39 @@ a {
 button a {
     color: var(--button-text-color);
 }
+
+/* New styles for responsive design */
+#hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+#mobile-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--nav-background-color);
+    position: absolute;
+    top: 60px;
+    width: 80%;
+    z-index: 1000;
+}
+
+#mobile-menu h3,
+#mobile-menu button {
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    #right {
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+    }
+}
+
 
 /* Header Styles */
 
@@ -247,10 +281,89 @@ button a {
 
 /* Footer Styles */
 footer {
+    width: 100%;
+    background-color: var(--nav-background-color);
+    color: #fff;
+    padding: 20px 30px;
+    bottom: 0;
+}
+
+.footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 30px;
-    background-color: var(--nav-background-color);
-    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .container0 {
+        flex-direction: column;
+        height: auto;
+        gap: 30px;
+    }
+
+    .text-section {
+        width: 100%;
+        height: auto;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .image-section {
+        width: 100%;
+    }
+
+    .image-section img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .mission {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .mission h1 {
+        font-size: 28px;
+    }
+
+    .mission p {
+        font-size: 16px;
+    }
+
+    .statistics {
+        width: 100%;
+    }
+
+    .statistics .stat h2 {
+        font-size: 28px;
+    }
+
+    .statistics .stat p {
+        font-size: 16px;
+    }
+
+    .image img {
+        width: 100%;
+        height: auto;
+        margin-left: 0%;
+        padding: 40px;
+        border-radius: 50px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
 }

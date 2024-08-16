@@ -95,3 +95,13 @@ function changeContent(index) {
 // crsr.style.left = dets.x + "px"
 // crsr.style.top = dets.y + "px"
 // })
+
+
+document.getElementById('hamburger').addEventListener('click', function() {
+    var mobileMenu = document.getElementById('mobile-menu');
+    if (mobileMenu.style.display === 'flex') {
+        mobileMenu.style.display = 'none';
+    } else {
+        mobileMenu.style.display = 'flex';
+    }
+});

@@ -20,6 +20,12 @@
                 <h3><a href="index.html"><i class="ri-home-2-line"></i>Home</a></h3>
                 <i id="mode-toggle" class="ri-sun-fill"></i>
             </div>
+            <div id="hamburger">
+                <i class="ri-menu-line"></i>
+            </div>
+            <div id="mobile-menu">
+                <h3><a href="index.html"><i class="ri-home-2-line"></i>Home</a></h3>
+            </div>
         </nav>
 
         <header>
@@ -60,15 +66,15 @@
                 <!-- Right Section: Statistics -->
                 <div class="statistics">
                     <div class="stat">
-                        <h2>44 million</h2>
+                        <h2 data-target="4400">0</h2>
                         <p>Transactions every 24 hours</p>
                     </div>
                     <div class="stat">
-                        <h2>$119 trillion</h2>
-                        <p>Assets under holding</p>
+                        <h2 data-target="11900">0</h2>
+                        <p>Assets under holding ($)</p>
                     </div>
                     <div class="stat">
-                        <h2>46,000</h2>
+                        <h2 data-target="46000">0</h2>
                         <p>New users annually</p>
                     </div>
                 </div>
@@ -94,15 +100,17 @@
                     <p>Founder</p>
                 </div>
             </div>
+        </div>
 
-            <!-- Footer Section -->
-            <footer>
-                <div class="footer-container">
-                    <h3>Web-Dev-mini-Projects</h3>
-                    <p>&copy; 2024 Web-Dev. All rights reserved.</p>
-                </div>
-            </footer>
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-container">
+                <h3>Web-Dev-mini-Projects</h3>
+                <p>&copy; 2024 Web-Dev. All rights reserved.</p>
+            </div>
+        </footer>
     </main>
+    <script src="script.js"></script>
     <script>
         // script.js
         document.addEventListener("DOMContentLoaded", function () {
@@ -110,14 +118,14 @@
             stats.forEach(stat => {
                 const animate = () => {
                     const value = +stat.getAttribute('data-target');
-                    const data = +stat.innerText;
-                    const speed = 200;
-                    const time = value / speed;
+                    let data = +stat.innerText.replace(/,/g, ''); // Remove commas for number comparison
+                    const speed = 20; // Adjust speed as needed
+                    const increment = value / speed;
                     if (data < value) {
-                        stat.innerText = Math.ceil(data + time);
-                        setTimeout(animate, 1);
+                        stat.innerText = Math.ceil(data + increment).toLocaleString(); // Add commas for better readability
+                        setTimeout(animate, 20); // Adjust delay for smoother animation
                     } else {
-                        stat.innerText = value;
+                        stat.innerText = value.toLocaleString(); // Ensure final value is correctly formatted
                     }
                 };
                 animate();
