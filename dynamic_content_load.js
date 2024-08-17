@@ -3,9 +3,6 @@ var header = [
     {
         h: "A Fully Integrated Site of Web Development Projects", p: "Our platform offers a collection of web development mini projects designed to enhance your coding skills and creativity. Whether you are a beginner or an experienced developer, you'll find something to challenge and inspire you.",
         img1: "Resources/web5.png" ,
-        img2: "https://plus.unsplash.com/premium_vector-1682309081920-d2725d3e620c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D" ,
-        img3: "https://plus.unsplash.com/premium_vector-1713913589831-611a54b0641c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D" ,
-        img4: "https://plus.unsplash.com/premium_vector-1711987659854-3f0edf6f6c52?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fFdlYiUyMERldmVsb3BtZW50JTIwUHJvamVjdHN8ZW58MHx8MHx8fDA%3D" ,
         link : "https://github.com/Shaurya01836/Web-dev-mini-projects"
     },
 ]
@@ -20,7 +17,7 @@ header.forEach(function (header) {
                         class="btn-secondary">View on GitHub</a>
                 </div>
                 <div class="herostats">
-                    <h5>4 Projects --</h5>
+                    <h5>8 Projects --</h5>
                     <h5>0 Contributor --</h5>
                     <h5>0 Forks</h5>
                 </div>
@@ -69,7 +66,7 @@ arr.forEach(function (Object) {
                     <img loading="lazy" src="${Object.img}" alt="${Object.name}">
                     <h4>${Object.name}</h4>
                     <p>${Object.des}</p>
-                    <button><a target="blank" href="${Object.link}">Explore</a></button>
+                    <a target="blank" href="${Object.link}">Explore</a>
                 </div> `
 })
 

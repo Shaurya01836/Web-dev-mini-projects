@@ -33,6 +33,10 @@
         gap: 30px;
     }
 
+    .left-p {
+        width: 100%;
+    }
+
     .left-p img {
         height: auto;
         width: 100%;
@@ -46,12 +50,18 @@
         font-size: 25px;
     }
 
+    .p-button {
+        width: 100%;
+        gap: 20px;
+    }
+
     .tools {
         flex-direction: column;
     }
 
     .cards {
         width: 72%;
+
     }
 
     .container {
@@ -106,27 +116,43 @@
     }
 
     .contact .main-c {
-        height: 100%;
-        width: 100%;
-        flex-direction: column;
-        gap:30px;
-    }
-    .contact .right-c {
-        width: 100%;
-        height: 50%;
-        border-radius: 10px;
-        background: url(Resources/contactus.png);
-        background-size: cover;
-    }
-    #tech {
-        height: 38%;
-        font-size: 18px;
-    }
-    .tech {
+        width: 90%;
         flex-direction: column;
         gap: 20px;
     }
-   
+
+    .contact .left-c {
+        width: 100%;
+    }
+
+    .contact .right-c {
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .contact .left-c input,
+    .contact .left-c input[type="submit"] {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+
+
+    #tech {
+        height: auto;
+        padding-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .tech {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
     .footer-container {
         flex-direction: column;
         justify-content: center;

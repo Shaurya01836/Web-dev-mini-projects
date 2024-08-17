@@ -374,9 +374,9 @@ header {
 
 }
 
-.cards button {
-    width: 75%;
-    padding: 8px;
+.cards a {
+    width: auto;
+    padding: 5px 50px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
@@ -385,7 +385,7 @@ header {
     transition: background-color 0.3s;
 }
 
-.cards button:hover {
+.cards a:hover {
     background-color: var(--secondary-color);
 }
 
@@ -545,7 +545,6 @@ header {
 .contact .left-c {
     height: 100%;
     width: 50%;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -567,7 +566,15 @@ header {
     padding: 8px;
     border-radius: 5px;
     border: 1px solid grey;
-    cursor: pointer;
+}
+.contact .left-c input[type="submit"] {
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    border: none;
+}
+
+.contact .left-c input[type="submit"]:hover {
+   cursor: pointer;
 }
 
 .contact .right-c {
