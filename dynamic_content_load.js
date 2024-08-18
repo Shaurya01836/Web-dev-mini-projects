@@ -55,7 +55,7 @@ let arr = [
     { name: "Password Generator", des: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, corporis?", img: "Resources/pass_generator1.png", link: "Random-Password-Generator-master/index.html" },
     { name: "Url shortener", des: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, corporis?", img: "Resources/Url.png", link: "" },
     { name: "To do List", des: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, corporis?", img: "Resources/Todo list1.png", link: "todo-list/index.html" },
-    { name: "Qr code maker", des: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, corporis?", img: "Resources/Qr_code.png", link: "QR-Code-Generator/index.html" },
+    { name: "Qr code maker", des: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, corporis?", img: "Resources/Qr_code.png", link: "Qr code generator/index.html" },
     
     
 ]

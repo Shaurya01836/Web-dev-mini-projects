@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-black font-sans m-0 p-0 relative scroll-smooth">
+    <!-- Top Gradient Background -->
+    <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu blur-3xl sm:-top-80 overflow-hidden" aria-hidden="true">
+        <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%);">
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="flex justify-between p-5">
+        <div class="font-semibold text-xl">
+            QR Code Generator
+        </div>
+        <div class="right flex gap-4 text-blue-700">
+            <a href="index.html" class="hover:underline">Home</a>
+            <a href="#" class="hover:underline">About</a>
+            <a href="#" class="hover:underline">Products</a>
+            <a href="#" class="hover:underline">Contact</a>
+            <a href="#" class="bg-blue-700 text-white rounded-xl px-2">FAQ</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="flex flex-col items-center justify-center gap-10 pt-20 text-center">
+        <h1 class="text-6xl font-bold text-blue-700">Generate QR Code from</h1>
+        <p class="text-2xl font-semibold">Create Unique QR Codes with Customization</p>
+        <p class="text-2xl font-normal w-4/5 md:w-2/3 lg:w-1/2">
+            QR Code Generator allows you to create personalized QR Codes for your website, business, or any other
+            purpose. With our user-friendly interface, you can easily generate QR Codes in various shapes and designs.
+        </p>
+        <a href="#QR"><button
+                class="text-blue-700 border-2 border-blue-700 px-6 py-3 rounded-xl hover:bg-blue-700 hover:text-white transition">
+                Create QR Code
+            </button></a>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="flex flex-col items-center justify-center gap-10 pt-40">
+        <div class="flex flex-col items-center justify-center gap-4 text-center">
+            <h2 class="text-4xl font-semibold">Transform Your Marketing with Personalized QR Codes</h2>
+            <p class="text-2xl font-normal text-gray-900 w-4/5 md:w-3/5">
+                Unlock new opportunities for your business with our versatile QR Code Generator.
+            </p>
+        </div>
+        <div class="flex items-center justify-center gap-10 flex-wrap">
+            <img class="rounded-xl w-80 h-80 object-cover" src="qr code.png" alt="QR Code 1">
+            <img class="rounded-xl w-80 h-80 object-cover" src="qr code1.png" alt="QR Code 2">
+            <img class="rounded-xl w-80 h-80 object-cover"
+                src="https://images.unsplash.com/photo-1706759755851-6163305080f0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cXIlMjBjb2RlJTIwZ2VuZXJhdG9yfGVufDB8fDB8fHww"
+                alt="QR Code 3">
+        </div>
+    </section>
+
+    <article id="QR" class="flex flex-col md:flex-row items-center justify-center gap-52 pt-40">
+        <div class="mt-8 flex flex-col gap-10">
+            <input id="linkInput"
+                class="bg-blue-400 border border-blue-700 rounded-lg px-4 py-2 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-blue-700"
+                type="text" placeholder="Paste your link here">
+            <button onclick="generateQRCode()" class="bg-blue-700 text-white px-6 py-3 rounded-xl">
+                Generate QR Code
+            </button>
+        </div>
+        <div class="" id="qrCodeContainer">
+            <img class="rounded-xl w-80 h-80 object-cover" src="Untitled 1.png" alt="" id="qrCodeImage">
+        </div>
+    </article>
+
+
+    <!-- Bottom Gradient Background -->
+    <div class="relative inset-x-0 mt-20 transform-gpu blur-3xl overflow-hidden" aria-hidden="true">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 aspect-[1155/678] w-[36.125rem] bg-gradient-to-tr from-[#000000] to-[#000000] opacity-30 sm:w-[72.1875rem]"
+            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%);">
+        </div>
+    </div>
+
+    <footer class="bg-blue-700 text-white py-4">
+        <div class="text-center text-sm">
+            © 2024 QR Code Generator. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+        function generateQRCode() {
+            const input = document.getElementById('linkInput').value;
+            const qrCodeContainer = document.getElementById('qrCodeContainer');
+
+            // Clear any previous QR code
+            qrCodeContainer.innerHTML = '';
+
+            // Generate new QR code
+            const qrcode = new QRCode(qrCodeContainer, {
+                text: input,
+                width: 320,
+                height: 320,
+                colorDark: "#000000",
+                colorLight: "#ffffff",
+                correctLevel: QRCode.CorrectLevel.H
+            });
+        }
+    </script>
+
+</body>
+
+</html>
